@@ -11,7 +11,8 @@
         # pdf
       - evince
       - firefox
-      - gvim
+        # gvim
+      - vim-gtk
       - mupdf
         # png
       - nomacs
