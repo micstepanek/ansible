@@ -17,13 +17,11 @@
       - nomacs
         # screen control
       - redshift
-      - srm
         # Latex
       # - texlive-recommended
       - texlive-base
       - texlive-extra-utils
       - vifm
-      - vlc
         # for inverting screen
       - xcalib
         # pdf printing
