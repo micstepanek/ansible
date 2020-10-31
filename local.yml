@@ -4,5 +4,24 @@
   - name: Install packages
     apt: 
       name: 
-        - redshift
-        - xcalib
+        # spell check
+      - aspell
+        # epub
+      - calibre
+        # pdf
+      - evince
+      - firefox
+      - gvim
+      - mupdf
+        # png
+      - nomacs
+      - pdflatex
+        # screen control
+      - redshift
+      - srm
+      - vifm
+      - vlc
+        # for inverting screen
+      - xcalib
+        # pdf printing
+      - zathura
