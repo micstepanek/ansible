@@ -9,21 +9,26 @@
         # epub
       - calibre
         # pdf
+      - chromium-browser
       - evince
+        # set background with
+      - feh
       - firefox
-        # gvim
-      - vim-gtk
+      - git-all
       - mupdf
         # png
       - nomacs
         # screen control
+      # - resolvconf
       - redshift
         # Latex
       # - texlive-recommended
       - texlive-base
       - texlive-extra-utils
       - vifm
-        # for inverting screen
+         # gvim
+      - vim-gtk
+        # invert screen
       - xcalib
         # pdf printing
       - zathura
