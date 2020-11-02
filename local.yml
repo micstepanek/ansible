@@ -1,34 +1,69 @@
 - hosts: localhost
   become: true
   tasks:
-  - name: Install packages
+  - name: Install spell checker
+    apt: 
+      name: aspell
+  
+  - name: Install epub editor 
+    apt: 
+      name: calibre
+
+  - name: Install fast pdf viewer
+    apt: 
+      name: mupdf
+
+  - name: Install pdf viewer for non-standard printing
+    apt: 
+      name: zathura
+
+  - name: Install another pdf viewer for compatibility
+    apt: 
+      name: evince
+
+  - name: Install git
+    apt: 
+      name: git-all
+
+  - name: Install background setter
+    apt: 
+      name: feh
+
+  - name: Install graphical vim
+    apt: 
+      name: vim-gtk
+
+  - name: Install vim-like file manager 
+    apt: 
+      name: vifm
+
+  - name: Install non-distorting .png viewer
+    apt: 
+      name: nomacs
+
+  - name: Install the package that solved your vpn
     apt: 
       name: 
-        # spell check
-      - aspell
-        # epub
-      - calibre
-        # pdf
-      - chromium-browser
-      - evince
-        # set background with
-      - feh
-      - firefox
-      - git-all
-      - mupdf
-        # png
-      - nomacs
-        # screen control
       # - resolvconf
+
+  - name: Install browsers
+    apt: 
+      name:
+      - chromium-browser
+      - firefox
+
+  - name: Install screen control apps 
+    apt: 
+      name:
       - redshift
-        # Latex
+      - xcalib
+
+  - name: Install Latex
+    apt: 
+      name:
       # - texlive-recommended
       - texlive-base
       - texlive-extra-utils
-      - vifm
-         # gvim
-      - vim-gtk
-        # invert screen
-      - xcalib
-        # pdf printing
-      - zathura
+     
+
+
