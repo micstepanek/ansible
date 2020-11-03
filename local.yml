@@ -65,5 +65,10 @@
       - texlive-base
       - texlive-extra-utils
      
+  - name: Install Nautilus for USB plug and play 
+    apt: 
+      name: nautilus
+     
+
 
 
