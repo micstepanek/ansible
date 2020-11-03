@@ -69,6 +69,11 @@
     apt: 
       name: nautilus
      
+  - name: Install secure-delete
+    apt: 
+      name: secure-delete
+     
+
 
 
 
